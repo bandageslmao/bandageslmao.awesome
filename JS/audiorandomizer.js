@@ -1,4 +1,4 @@
-const bgms = ["supersponge","CosmicEternity","MetallicMadness","BreakFree"]
+const bgms = ["supersponge","CosmicEternity","MetallicMadness","BreakFree","FeelTheFury"]
 audio = document.createElement("audio")
 document.body.appendChild(audio)
 audio.controls = false
@@ -14,10 +14,17 @@ activateautoplay.onclick = () => {
 document.body.appendChild(activateautoplay)
 
 function randomizer(){
-    audio.src = "Audio/" + bgms[Math.floor(Math.random() * bgms.length)] + ".mp3"
+    const bgm = "Audio/" + bgms[Math.floor(Math.random() * bgms.length)] + ".mp3"
+    audio.src = bgm
     audio.play().catch((err) => {
         activateautoplay.hidden = false
     })
+    if (bgm === "Audio/FeelTheFury.mp3"){
+        thatprimalrage()
+    }
+    if (bgm === "Audio/BreakFree.mp3"){
+        brokenfree()
+    }
 }
 randomizer()
 
