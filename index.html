@@ -19,11 +19,33 @@
             denied.volume = 0.3
         }
     </script>
+    <style>
+        Body{
+            background-color: black;
+        }
+        .Banner{
+            border-color: royalblue;
+            background-color: black;
+            color: blue;
+        }
+        Button{
+            horiz-align: center;
+        }
+    </style>
     <script src="JS/Achievements.js"></script>
 </head>
 <body>
 <script src="JS/audiorandomizer.js"></script>
-<button onmouseenter="bump()" onclick="denied()">Homepage</button>
-<button onclick="splat()">Splat</button>
+<div class="Banner">
+    <img src="Images/old-roblox-banners-v0-ioau0u85om7b1.png" alt="placeholder :3">
+</div>
+<div id="Buttons">
+    <button onmouseenter="bump()" onclick="denied(); noscoped()">Homepage</button>
+    <button onclick="splat(); noscoped()" >Splat</button>
+    <button onclick="reset()">Reset Achievements</button>
+</div>
+<div id="About Me" style="width: 75%; margin: auto; color: blue; border-color: royalblue">
+    <h2>About meee!!!</h2>
+</div>
 </body>
 </html>

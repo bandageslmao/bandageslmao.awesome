@@ -1,4 +1,4 @@
-const bgms = ["supersponge","CosmicEternity","MetallicMadness"]
+const bgms = ["supersponge","CosmicEternity","MetallicMadness","BreakFree"]
 audio = document.createElement("audio")
 document.body.appendChild(audio)
 audio.controls = false
@@ -7,6 +7,7 @@ activateautoplay = document.createElement("button")
 activateautoplay.hidden = true
 activateautoplay.textContent = "Hey! your autoplay's off! click me to turn it on!"
 activateautoplay.onclick = () => {
+    visit()
     audio.play()
     activateautoplay.hidden = true
 }
