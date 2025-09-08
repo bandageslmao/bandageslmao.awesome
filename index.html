@@ -8,11 +8,22 @@
             const bumper = new Audio("Audio/bumper.mp3")
             bumper.play()
         }
+        function splat(){
+            const splatsound = new Audio("Audio/splat.mp3")
+            splatsound.play()
+            splatsound.volume = 0.3
+        }
+        function denied(){
+            const denied = new Audio("Audio/denied.mp3")
+            denied.play()
+            denied.volume = 0.3
+        }
     </script>
     <script src="JS/Achievements.js"></script>
 </head>
 <body>
 <script src="JS/audiorandomizer.js"></script>
-<a href="./Pages/secondpagetest.html"><button onmouseenter="bump()">Homepage</button></a>
+<button onmouseenter="bump()" onclick="denied()">Homepage</button>
+<button onclick="splat()">Splat</button>
 </body>
 </html>

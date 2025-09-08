@@ -2,6 +2,7 @@ const bgms = ["supersponge","CosmicEternity","MetallicMadness"]
 audio = document.createElement("audio")
 document.body.appendChild(audio)
 audio.controls = false
+audio.volume = 0.5
 activateautoplay = document.createElement("button")
 activateautoplay.hidden = true
 activateautoplay.textContent = "Hey! your autoplay's off! click me to turn it on!"
