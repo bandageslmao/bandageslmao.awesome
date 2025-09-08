@@ -1,9 +1,15 @@
+UI = document.createElement("div")
+UI.hidden = false
+UI.position.fixed()
+achieveicon = document.createElement("img")
+UI.appendChild(achieveicon)
+
 function visit(){
     if (localStorage.getItem("Visit!") !== "True"){
         snd = new Audio("Audio/achieve1.mp3")
         snd.play()
         localStorage.setItem("Visit!", "True")
-        alert("Achievement Unlocked: Visit! \n Hello!")
+        achieveicon.src = "Images/old-roblox-banners-v0-ioau0u85om7b1.png"
     }
 }
 function noscoped(){
@@ -12,7 +18,6 @@ function noscoped(){
         snd.play()
         snd.volume = 0.5
         localStorage.setItem("GETNOSCOPEDDD", "True")
-        alert("Achievement Unlocked: 360NOSCOPEEEE \n GETNOSCOPEDDD: Click a button!")
     }
 }
 function reset(){
