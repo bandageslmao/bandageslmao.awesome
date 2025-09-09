@@ -1,4 +1,4 @@
-const bgms = ["supersponge","CosmicEternity","MetallicMadness","BreakFree","FeelTheFury"]
+const bgms = ["supersponge","CosmicEternity","MetallicMadness","BreakFree","FeelTheFury","WackyWorkbench"]
 audio = document.createElement("audio")
 document.body.appendChild(audio)
 audio.controls = false
