@@ -7,6 +7,32 @@ UI.appendChild(achievename)
 UI.appendChild(achievereq)
 document.body.appendChild(UI)
 
+function showAchievement() {
+    const popup = document.createElement('div');
+    popup.className = 'achievement-popup';
+
+    popup.innerHTML = `
+      <img src="https://via.placeholder.com/64" alt="Achievement Icon">
+      <div class="achievement-text">
+        <div class="achievement-title">Achievement Unlocked!</div>
+        <div class="achievement-desc">You read your first creepypasta.</div>
+      </div>
+    `;
+
+    document.body.appendChild(popup);
+
+    // Trigger animation
+    setTimeout(() => {
+        popup.classList.add('show');
+    }, 100);
+
+    // Auto-remove after 5 seconds
+    setTimeout(() => {
+        popup.classList.remove('show');
+        setTimeout(() => popup.remove(), 500); // Wait for transition to finish
+    }, 5000);
+}
+
 function visit(){
     if (localStorage.getItem("Visit!") !== "True"){
         snd = new Audio("Audio/achieve1.mp3")
@@ -61,6 +87,8 @@ function creepypasta(){
         alert("Achievement Get: Ooh, Very Scary.")
     }
 }
+
+
 
 function reset(){
     localStorage.removeItem("GETNOSCOPEDDD")
