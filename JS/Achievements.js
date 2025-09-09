@@ -51,9 +51,21 @@ function brokenfree(){
     }
 }
 
+function creepypasta(){
+    if (localStorage.getItem("creepypasta") !== "True"){
+        snd = new Audio("Audio/crappypasta.mp3")
+        snd.play()
+        snd.volume = 0.1
+        localStorage.setItem("creepypasta", "True")
+        achievename.textContent = "Ooh, very scary."
+        alert("Achievement Get: Ooh, Very Scary.")
+    }
+}
+
 function reset(){
     localStorage.removeItem("GETNOSCOPEDDD")
     localStorage.removeItem("Visit!")
     localStorage.removeItem("FeelTheFury")
     localStorage.removeItem("BreakFree")
+    localStorage.removeItem("creepypasta")
 }
