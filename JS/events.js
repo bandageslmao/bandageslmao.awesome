@@ -1,5 +1,3 @@
-const events = ["creepypasta"];
-
 function creepypasta() {
   const button = document.createElement("button");
   button.style.position = "relative"
