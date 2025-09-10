@@ -14,6 +14,6 @@ function creepypasta() {
   }
 }
 
-if (Math.random() < 0.005){
+if (Math.random() < 0.0054){
   creepypasta()
 }
