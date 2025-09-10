@@ -1,88 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>bandageslmao.awesome</title>
     <script id="favicongen">
-        const icons = ["epic.ico","soretro.ico","sponge.ico"]
-        const randicon = Math.floor(Math.random() * icons.length)
-        const link = document.createElement("link")
-        link.rel = "icon"
-        link.type = "image/x-icon"
-        link.href = "Favicons/" + icons[randicon]
-        document.head.appendChild(link)
+      const icons = ["epic.ico", "soretro.ico", "sponge.ico"];
+      const randicon = Math.floor(Math.random() * icons.length);
+      const link = document.createElement("link");
+      link.rel = "icon";
+      link.type = "image/x-icon";
+      link.href = "Favicons/" + icons[randicon];
+      document.head.appendChild(link);
     </script>
     <script>
-        function bump(){
-            const bumper = new Audio("Audio/bumper.mp3")
-            bumper.play()
-        }
-        function splat(){
-            const splatsound = new Audio("Audio/splat.mp3")
-            splatsound.play()
-            splatsound.volume = 0.3
-        }
-        function denied(){
-            const denied = new Audio("Audio/denied.mp3")
-            denied.play()
-            denied.volume = 0.3
-        }
+      function bump() {
+        const bumper = new Audio("Audio/bumper.mp3");
+        bumper.play();
+      }
+      function splat() {
+        const splatsound = new Audio("Audio/splat.mp3");
+        splatsound.play();
+        splatsound.volume = 0.3;
+      }
+      function denied() {
+        const denied = new Audio("Audio/denied.mp3");
+        denied.play();
+        denied.volume = 0.3;
+      }
+      function click() {
+        const csound = new Audio("Audio/clicksound.mp3");
+        csound.play();
+        csound.volume = 0.3;
+      }
     </script>
     <style>
-        body{
-            background-image: url("Images/1eprhbtmvoo51.png");
-            background-size: cover;
-        }
-        .Banner{
-            border-color: royalblue;
-            color: blue;
-        }
-        .Buttons{
-            text-align: center;
-        }
-        img{
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        @font-face {
-            font-family: minecraft;
-            src: url(Fonts/mojangles.otf);
-        }
-        .Quote{
-            font-family: minecraft;
-            color: yellow;
-        }
+      body {
+        background-image: url("Images/1eprhbtmvoo51.png");
+        background-size: cover;
+      }
+      .Banner {
+        border-color: royalblue;
+        color: blue;
+      }
+      .Buttons {
+        text-align: center;
+      }
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      @font-face {
+        font-family: minecraft;
+        src: url(Fonts/mojangles.otf);
+      }
+      .Quote {
+        font-family: minecraft;
+        color: yellow;
+      }
     </style>
     <script src="JS/Achievements.js"></script>
-</head>
-<body>
-<script src="JS/audiorandomizer.js"></script>
-<div class="Banner">
-    <img alt="placeholder :3" width="75%" id="Banner" src="Images/peoplebanner.png">
-</div>
-<script>
-    banners = ["peoplebanner.png","futbol.png","ocean.png","2006.png","christmas.png","city.png"]
-    randbanner = banners[Math.floor(Math.random() * banners.length)]
-    imageofbanner = document.getElementById("Banner")
-    imageofbanner.src = "Images/"+randbanner
-</script>
-<script id="iquot">
-const mequot = document.createElement("p")
-mequot.style.textAlign = "center"
-mequot.className = "Quote"
-document.body.appendChild(mequot)
-const quotes = ["Made with Webstorm!","do you want to play an underguater game with me?","Are you ready kids?","feal","Risking my life for these friends ive found!","Better than chezzkids!","i like hotdogs - bandageslmao","Builderman 4 Prez!","Jarate!","Lets do this texas style - Bandageslmao","grounded sim please come back i need you grounded sim","Also Try Phighting!","loader ror2 my beloved","Also Try TBS on minecraft!","i <3 my riends","Lets Chat! how are you feeling?","You better get ready to die!","dm the owner about PA, it'll be funny.","THE.PAST.IS.NOT.A.SAFE.HAVEN","Ready for round 2?","Way past cool!","My name is Pace!","We Love You!","kayloo, how dare you go to bandageslmao.awesome. Thats it, you are ungrounded ungrounded ungrounded","put me back in 12th grade, put me back in 12th grade, put me back in 12th grade"]
-const randquote = Math.floor(Math.random() * quotes.length)
-mequot.textContent = quotes[randquote]
-</script>
-<div class="Buttons">
-    <button onmouseenter="bump()" onclick="denied(); noscoped()">Homepage</button>
-    <button onmouseenter="bump()" onclick="splat(); noscoped()" >Splat</button>
-    <button onmouseenter="bump()" onclick="reset()">Reset Achievements</button>
-</div>
-<div id="About Me" style="width: 75%; margin: auto; color: blue; border-color: royalblue">
-    <h2>About meee!!!</h2>
-</div>
-</body>
+  </head>
+  <body>
+    <script src="JS/audiorandomizer.js"></script>
+    <div class="Banner">
+      <img
+        alt="placeholder :3"
+        width="75%"
+        id="Banner"
+        src="Images/peoplebanner.png"
+      />
+    </div>
+    <script>
+      banners = [
+        "peoplebanner.png",
+        "futbol.png",
+        "ocean.png",
+        "2006.png",
+        "christmas.png",
+        "city.png",
+      ];
+      randbanner = banners[Math.floor(Math.random() * banners.length)];
+      imageofbanner = document.getElementById("Banner");
+      imageofbanner.src = "Images/" + randbanner;
+    </script>
+    <script id="iquot">
+      const mequot = document.createElement("p");
+      mequot.style.textAlign = "center";
+      mequot.className = "Quote";
+      document.body.appendChild(mequot);
+      const quotes = [
+        "Made with Webstorm!",
+        "do you want to play an underguater game with me?",
+        "Are you ready kids?",
+        "feal",
+        "Risking my life for these friends ive found!",
+        "Better than chezzkids!",
+        "i like hotdogs - bandageslmao",
+        "Builderman 4 Prez!",
+        "Jarate!",
+        "Lets do this texas style - Bandageslmao",
+        "grounded sim please come back i need you grounded sim",
+        "Also Try Phighting!",
+        "loader ror2 my beloved",
+        "Also Try TBS on minecraft!",
+        "i <3 my riends",
+        "Lets Chat! how are you feeling?",
+        "You better get ready to die!",
+        "dm the owner about PA, it'll be funny.",
+        "THE.PAST.IS.NOT.A.SAFE.HAVEN",
+        "Ready for round 2?",
+        "Way past cool!",
+        "My name is Pace!",
+        "We Love You!",
+        "kayloo, how dare you go to bandageslmao.awesome. Thats it, you are ungrounded ungrounded ungrounded",
+        "put me back in 12th grade, put me back in 12th grade, put me back in 12th grade",
+      ];
+      const randquote = Math.floor(Math.random() * quotes.length);
+      mequot.textContent = quotes[randquote];
+    </script>
+    <div class="Buttons">
+      <button onmouseenter="bump()" onclick="denied(); noscoped()">
+        Homepage
+      </button>
+      <button onmouseenter="bump()" onclick="splat(); noscoped()">Splat</button>
+      <button onmouseenter="bump()" onclick="reset()">
+        Reset Achievements
+      </button>
+      <a href="Achievements.html"><button onmouseenter="bump()" onclick="click()">
+        Achievements
+      </button>
+    </a>
+    </div>
+    <div
+      id="About Me"
+      style="width: 75%; margin: auto; color: blue; border-color: royalblue"
+    >
+      <h2>About meee!!!</h2>
+    </div>
+  </body>
 </html>
