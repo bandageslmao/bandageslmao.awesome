@@ -81,7 +81,7 @@ function brokenfree() {
   }
 }
 
-function creepypasta() {
+function creepypastafunc() {
   if (localStorage.getItem("creepypasta") !== "True") {
     snd = new Audio("Audio/crappypasta.mp3");
     snd.play();
