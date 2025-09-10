@@ -4,15 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>bandageslmao.awesome</title>
+    <style>
+      @font-face {
+        font-family: retro;
+        src: url(Fonts/Fragile\ Bombers\ Down.otf);
+      }
+      div {
+        font-family: retro;
+        color: turquoise;
+        font-size: 50px;
+        font-style: italic;
+      }
+    </style>
   </head>
   <body>
-    <audio src="Audio/Achievments.mp3" autoplay></audio>
+    <audio src="Audio/Achievments.mp3" autoplay id="ost"></audio>
     <div id="ac1"></div>
     <div id="ac2"></div>
     <div id="ac3"></div>
     <div id="ac4"></div>
     <div id="ac5"></div>
     <div id="ac6"></div>
+    <div id="ac7"></div>
     <script src="JS/AchievementsList.js"></script>
+    <script>
+      const sjam = document.getElementById("ost");
+      sjam.volume = 0.2;
+    </script>
   </body>
 </html>

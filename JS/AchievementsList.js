@@ -39,3 +39,20 @@ if (localStorage.getItem("NullVoid") !== "True") {
 } else {
   ac6.textContent = "Here I Am. - Unlocked";
 }
+
+if (
+  localStorage.getItem("Visit!") === "True" &&
+  localStorage.getItem("GETNOSCOPEDDD") === "True" &&
+  localStorage.getItem("FeelTheFury") === "True" &&
+  localStorage.getItem("BreakFree") === "True" &&
+  localStorage.getItem("creepypasta") === "True" &&
+  localStorage.getItem("NullVoid") === "True"
+) {
+  ac7 = document.getElementById("ac7")
+  ac7.textContent = "Completionist - Unlocked";
+  completesound = new Audio("Audio/youwin.mp3")
+  completesound.volume = 1
+  completesound.play()
+}else{
+  ac7.textContent = "Completionist - Locked";
+}

@@ -28,7 +28,7 @@ activateautoplay.onclick = () => {
 document.body.appendChild(activateautoplay);
 
 function randomizer() {
-  if (Math.random() < 0.99) {
+  if (Math.random() < 0.1) {
     audio.src = "Audio/TBOTV.mp3";
     audio.volume = 1;
     audio.play().catch((err) => {
