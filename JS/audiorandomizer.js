@@ -28,28 +28,29 @@ activateautoplay.onclick = () => {
 document.body.appendChild(activateautoplay);
 
 function randomizer() {
-  if (Math.random() < 0.99){
-    audio.src = "Audio/TBOTV.mp3"
-    audio.volume = 1
+  if (Math.random() < 0.99) {
+    audio.src = "Audio/TBOTV.mp3";
+    audio.volume = 1;
     audio.play().catch((err) => {
-    activateautoplay.hidden = false;
-    console.error("audio failed womp",err)
-    })
-    tbs()
-  }else{
-      const bgm = "Audio/" + bgms[Math.floor(Math.random() * bgms.length)] + ".mp3";
-  audio.src = bgm;
-  audio.volume = 0.5;
-  audio.play().catch((err) => {
-    activateautoplay.hidden = false;
-    console.error("audio failed womp",err)
-  });
-  if (bgm === "Audio/FeelTheFury.mp3") {
-    thatprimalrage();
-  }
-  if (bgm === "Audio/BreakFree.mp3") {
-    brokenfree();
-  }
+      activateautoplay.hidden = false;
+      console.error("audio failed womp", err);
+    });
+    tbs();
+  } else {
+    const bgm =
+      "Audio/" + bgms[Math.floor(Math.random() * bgms.length)] + ".mp3";
+    audio.src = bgm;
+    audio.volume = 0.5;
+    audio.play().catch((err) => {
+      activateautoplay.hidden = false;
+      console.error("audio failed womp", err);
+    });
+    if (bgm === "Audio/FeelTheFury.mp3") {
+      thatprimalrage();
+    }
+    if (bgm === "Audio/BreakFree.mp3") {
+      brokenfree();
+    }
   }
 }
 randomizer();

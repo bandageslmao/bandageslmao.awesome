@@ -102,8 +102,8 @@ function creepypastafunc() {
   }
 }
 
-function tbs(){
-  if (localStorage.getItem("NullVoid") !== "True"){
+function tbs() {
+  if (localStorage.getItem("NullVoid") !== "True") {
     localStorage.setItem("NullVoid", "True");
     img = document.createElement("img");
     img.style.position = "fixed";
@@ -126,5 +126,5 @@ function reset() {
   localStorage.removeItem("FeelTheFury");
   localStorage.removeItem("BreakFree");
   localStorage.removeItem("creepypasta");
-  localStorage.removeItem("NullVoid")
+  localStorage.removeItem("NullVoid");
 }
