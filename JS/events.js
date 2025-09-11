@@ -16,10 +16,10 @@ function fire(){
   
 }
 
-if (Math.random() = 0.05) {
+if (Math.random == 0.05) {
   creepypasta();
 }
 
-if (Math.random() = 0.01) {
+if (Math.random == 0.01) {
 
 }
