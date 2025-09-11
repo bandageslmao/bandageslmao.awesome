@@ -1,7 +1,12 @@
 const mequot = document.createElement("p");
-mequot.style.textAlign = "center";
+mequot.style.fontFamily = "minecraft";
+mequot.style.color = "yellow";
 mequot.className = "Quote";
+mequot.style.animation = "pulsate 5s ease-in-out infinite";
+mequot.style.textAlign = "center";
+const bodiv = document.getElementById("body");
 document.body.appendChild(mequot);
+bodiv.appendChild(mequot);
 const quotes = [
   "Made with Webstorm!",
   "do you want to play an underguater game with me?",
@@ -28,7 +33,7 @@ const quotes = [
   "We Love You!",
   "kayloo, how dare you go to bandageslmao.awesome. Thats it, you are ungrounded ungrounded ungrounded",
   "put me back in 12th grade, put me back in 12th grade, put me back in 12th grade",
-    '"I HATE CACTI" - ANGRY GREG'
+  '"I HATE CACTI" - ANGRY GREG',
 ];
 const randquote = Math.floor(Math.random() * quotes.length);
 mequot.textContent = quotes[randquote];
