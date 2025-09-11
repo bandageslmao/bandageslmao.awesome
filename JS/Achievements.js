@@ -118,6 +118,13 @@ if (localStorage.getItem("Visit!") !== "True") {
         img.style.display = "none";
     }, 3000);
 }
+function bald(){
+    if (localStorage.getItem("Oh, Hi!") !== "True") {
+        localStorage.setItem("Oh, Hi!", "True");
+        snd = new Audio("Audio/bald.mp3");
+        snd.play();
+    }
+}
 
 function reset() {
   localStorage.removeItem("GETNOSCOPEDDD");
@@ -126,4 +133,5 @@ function reset() {
   localStorage.removeItem("BreakFree");
   localStorage.removeItem("creepypasta");
   localStorage.removeItem("NullVoid");
+  localStorage.removeItem("Oh, Hi!")
 }
