@@ -17,7 +17,8 @@ const bgms = [
     "mii",
     "Spongetastic!",
     "wii party",
-    "lies"
+    "lies",
+    "ssb"
 ];
 audio = document.createElement("audio");
 document.body.appendChild(audio);
