@@ -3,6 +3,7 @@ mequot.style.fontFamily = "minecraft";
 mequot.style.color = "yellow";
 mequot.className = "Quote";
 mequot.style.animation = "pulsate 5s ease-in-out infinite";
+mequot.style.overflowX = "hidden"
 mequot.style.textAlign = "center";
 const bodiv = document.getElementById("body");
 document.body.appendChild(mequot);

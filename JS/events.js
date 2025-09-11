@@ -12,6 +12,14 @@ function creepypasta() {
   };
 }
 
-if (Math.random() < 0.5) {
+function fire(){
+  
+}
+
+if (Math.random() = 0.05) {
   creepypasta();
+}
+
+if (Math.random() = 0.01) {
+
 }
