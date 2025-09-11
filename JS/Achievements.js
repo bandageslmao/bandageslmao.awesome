@@ -1,23 +1,3 @@
-function visit() {
-  if (localStorage.getItem("Visit!") !== "True") {
-    snd = new Audio("Audio/achieve1.mp3");
-    snd.play();
-    localStorage.setItem("Visit!", "True");
-    img = document.createElement("img");
-    img.style.position = "fixed";
-    img.style.bottom = 0;
-    img.style.left = 0;
-    img.style.right = 0;
-    img.style.margin = "auto";
-    img.style.width = 200;
-    document.body.appendChild(img);
-    img.src = "Achievements/visit.png";
-    setTimeout(() => {
-      img.style.display = "none";
-    }, 3000);
-  }
-}
-
 function noscoped() {
   if (localStorage.getItem("GETNOSCOPEDDD") !== "True") {
     snd = new Audio("Audio/getnoscoped.mp3");
@@ -118,6 +98,25 @@ function tbs() {
       img.style.display = "none";
     }, 3000);
   }
+}
+
+if (localStorage.getItem("Visit!") !== "True") {
+    localStorage.setItem("Visit", "True");
+    snd = new Audio("Audio/achieve1.mp3");
+    snd.play();
+    localStorage.setItem("Visit!", "True");
+    img = document.createElement("img");
+    img.style.position = "fixed";
+    img.style.bottom = 0;
+    img.style.left = 0;
+    img.style.right = 0;
+    img.style.margin = "auto";
+    img.style.width = 200;
+    document.body.appendChild(img);
+    img.src = "Achievements/visit.png";
+    setTimeout(() => {
+        img.style.display = "none";
+    }, 3000);
 }
 
 function reset() {

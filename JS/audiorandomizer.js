@@ -21,7 +21,6 @@ activateautoplay.hidden = true;
 activateautoplay.textContent =
   "Hey! your autoplay's off! click me to turn it on!";
 activateautoplay.onclick = () => {
-  visit();
   audio.play();
   activateautoplay.hidden = true;
 };
@@ -29,7 +28,7 @@ document.body.appendChild(activateautoplay);
 
 function randomizer() {
   if (Math.random() < 0.1) {
-    audio.src = "Audio/TBOTV.mp3";
+    audio.src = "Audio/Nullsad.ogg";
     audio.volume = 1;
     audio.play().catch((err) => {
       activateautoplay.hidden = false;

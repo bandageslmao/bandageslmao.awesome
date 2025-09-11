@@ -28,6 +28,7 @@ const quotes = [
   "We Love You!",
   "kayloo, how dare you go to bandageslmao.awesome. Thats it, you are ungrounded ungrounded ungrounded",
   "put me back in 12th grade, put me back in 12th grade, put me back in 12th grade",
+    '"I HATE CACTI" - ANGRY GREG'
 ];
 const randquote = Math.floor(Math.random() * quotes.length);
 mequot.textContent = quotes[randquote];
