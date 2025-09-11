@@ -12,6 +12,12 @@ const bgms = [
   "TropicalCrust",
   "CrackedEmpire",
   "FriendsNoMore",
+    "Blimey!",
+    "Metropolis",
+    "mii",
+    "Spongetastic!",
+    "wii party",
+    "lies"
 ];
 audio = document.createElement("audio");
 document.body.appendChild(audio);
