@@ -5,19 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>bandageslmao.awesome</title>
     <script>
-        function screamer(){
-            const snd = new Audio("Audio/bananasong.mp3")
-            const screamer = new Audio("Audio/screamer.mp3")
-            snd.play()
-            snd.addEventListener('ended', function(){
-              document.body.style.backgroundImage = 'url("Images/dollthing0.jpg")';
-              document.body.style.backgroundSize = 'cover';
-              screamer.play()
-              screamer.addEventListener('ended', function(){
-                window.location.href = 'index.html';
-              })
-            })
-        }
+      function screamer() {
+        const snd = new Audio("Audio/bananasong.mp3");
+        const screamer = new Audio("Audio/screamer.mp3");
+        snd.play();
+        snd.addEventListener("ended", function () {
+          document.body.style.backgroundImage = 'url("Images/dollthing0.jpg")';
+          document.body.style.backgroundSize = "cover";
+          screamer.play();
+          screamer.addEventListener("ended", function () {
+            window.location.href = "index.html";
+          });
+        });
+      }
     </script>
     <script src="JS/Achievements.js"></script>
   </head>
