@@ -123,15 +123,39 @@ function bald(){
         localStorage.setItem("Oh, Hi!", "True");
         snd = new Audio("Audio/bald.mp3");
         snd.play();
+    img = document.createElement("img");
+    img.style.position = "fixed";
+    img.style.bottom = 0;
+    img.style.left = 0;
+    img.style.right = 0;
+    img.style.margin = "auto";
+    img.style.width = 200;
+    document.body.appendChild(img);
+    img.src = "Achievements/oops wrong game lol.png";
+    setTimeout(() => {
+      img.style.display = "none";
+    }, 3000);
     }
 }
 
+function bananaach(){
+  if (localStorage.getItem("Banana = :rage:") !== "True") {
+    localStorage.setItem("Banana = :rage:", "True");
+        img = document.createElement("img");
+    img.style.position = "fixed";
+    img.style.bottom = 0;
+    img.style.left = 0;
+    img.style.right = 0;
+    img.style.margin = "auto";
+    img.style.width = 200;
+    document.body.appendChild(img);
+    img.src = "Achievements/banan.png";
+    setTimeout(() => {
+      img.style.display = "none";
+    }, 3000);
+  }
+}
+
 function reset() {
-  localStorage.removeItem("GETNOSCOPEDDD");
-  localStorage.removeItem("Visit!");
-  localStorage.removeItem("FeelTheFury");
-  localStorage.removeItem("BreakFree");
-  localStorage.removeItem("creepypasta");
-  localStorage.removeItem("NullVoid");
-  localStorage.removeItem("Oh, Hi!")
+  localStorage.clear()
 }

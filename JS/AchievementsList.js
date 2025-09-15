@@ -5,7 +5,8 @@ ac4 = document.getElementById("ac4");
 ac5 = document.getElementById("ac5");
 ac6 = document.getElementById("ac6");
 ac7 = document.getElementById("ac7");
-ac8 = document.getElementById("ac8")
+ac8 = document.getElementById("ac8");
+ac9 = document.getElementById("banana")
 
 
 if (localStorage.getItem("Visit!") !== "True") {
@@ -51,6 +52,13 @@ if (localStorage.getItem("Oh, Hi!") !== "True") {
         ac7.textContent = "Oh, Hi! - Unlocked";
     }
 
+if (localStorage.getItem("Banana = :rage:") !== "True") {
+    ac9.textContent = "Banana = 😡 - Locked"
+}
+else{
+  ac9.textContent = "Banana = 😡 - Unlocked"
+}
+
 
 if (
   localStorage.getItem("Visit!") === "True" &&
@@ -58,7 +66,8 @@ if (
   localStorage.getItem("FeelTheFury") === "True" &&
   localStorage.getItem("BreakFree") === "True" &&
   localStorage.getItem("Oh, Hi!") === "True" &&
-  localStorage.getItem("NullVoid") === "True"
+  localStorage.getItem("NullVoid") === "True" &&
+  localStorage.getItem("Banana = 😡") === "True"
 ) {
   ac8.textContent = "Completionist - Unlocked";
   completesound = new Audio("Audio/youwin.mp3")
