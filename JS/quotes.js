@@ -35,6 +35,10 @@ const quotes = [
   "kayloo, how dare you go to bandageslmao.awesome. Thats it, you are ungrounded ungrounded ungrounded",
   "put me back in 12th grade, put me back in 12th grade, put me back in 12th grade",
   '"I HATE CACTI" - ANGRY GREG',
+  "Believe in Yourself!",
+  "SONIC, DEAD OR ALIVE, IS MINE.",
+  "The master plan!",
+  "https://www.youtube.com/watch?v=7iFXyLah2oQ&pp=ygUMdXNlcm5hbWUgNjY20gcJCbIJAYcqIYzv"
 ];
 const randquote = Math.floor(Math.random() * quotes.length);
 mequot.textContent = quotes[randquote];

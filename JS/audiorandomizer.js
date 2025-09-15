@@ -37,6 +37,7 @@ function randomizer() {
   if (Math.random() < 0.1) {
     audio.src = "Audio/Nullsad.ogg";
     audio.volume = 1;
+    audio.loop = true
     audio.play().catch((err) => {
       activateautoplay.hidden = false;
       console.error("audio failed womp", err);
