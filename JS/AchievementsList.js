@@ -67,7 +67,7 @@ if (
   localStorage.getItem("BreakFree") === "True" &&
   localStorage.getItem("Oh, Hi!") === "True" &&
   localStorage.getItem("NullVoid") === "True" &&
-  localStorage.getItem("Banana = 😡") === "True"
+  localStorage.getItem("Banana = :rage:") === "True"
 ) {
   ac8.textContent = "Completionist - Unlocked";
   completesound = new Audio("Audio/youwin.mp3")
