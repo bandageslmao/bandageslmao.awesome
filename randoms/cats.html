@@ -1,31 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>bandageslmao.awesome</title>
     <style>
-        body{
-            animation: gaybg 5s infinite ease-in-out;
-            background-image: url("/Images/stupid flipping cat.gif");
-            background-size: 5%;
+      body {
+        animation: gaybg 5s infinite ease-in-out;
+        background-image: url("/Images/stupid flipping cat.gif");
+        background-size: 5%;
+      }
+      @keyframes gaybg {
+        14.29% {
+          background-color: red;
         }
-        @keyframes gaybg {
-            14.29% {background-color: red;}
-            28.58% {background-color: orange;}
-            42.87% {background-color: yellow;}
-            57.16% {background-color: green;}
-            71.45% {background-color: blue;}
-            85.74% {background-color: indigo;}
-            100% {background-color: violet;}
+        28.58% {
+          background-color: orange;
         }
+        42.87% {
+          background-color: yellow;
+        }
+        57.16% {
+          background-color: green;
+        }
+        71.45% {
+          background-color: blue;
+        }
+        85.74% {
+          background-color: indigo;
+        }
+        100% {
+          background-color: violet;
+        }
+      }
     </style>
     <script src="/JS/Achievements.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <audio src="/Audio/kitty.mp3" autoplay loop></audio>
     <script>
-              function screamer() {
+      function screamer() {
         const snd = new Audio("Audio/bananasong.mp3");
         const screamer = new Audio("Audio/screamer.mp3");
         snd.play();
@@ -38,34 +52,34 @@
           });
         });
       }
-        img = new Image();
-        img.style.marginLeft = "auto";
-        img.style.marginRight = "auto";
-        img.style.display = "block";
-        img.style.width = "300px";
-        img.style.height = "300px";
-        document.body.appendChild(img);
-        randomcat = Math.floor(Math.random() * 30)+1;
-        img.src = "/cats/cat-"+randomcat+".png"
-        function changeCat(){
-            const rand = Math.random()
-            if (rand <= 0.25){
-                bananaach()
-                screamer()
-                img.src = "/Images/360_F_1634119274_aqm98QjTB8X95MBqQlbD5XtpmqWkkvMG.jpg"
-            }
-            else{
-                randomcat = Math.floor(Math.random() * 30)+1;
-                img.src = "/cats/cat-"+randomcat+".png"
-            }
+      img = new Image();
+      img.style.marginLeft = "auto";
+      img.style.marginRight = "auto";
+      img.style.display = "block";
+      img.style.width = "300px";
+      img.style.height = "300px";
+      document.body.appendChild(img);
+      randomcat = Math.floor(Math.random() * 30) + 1;
+      img.src = "/cats/cat-" + randomcat + ".png";
+      function changeCat() {
+        const rand = Math.random();
+        if (rand <= 0.25) {
+          bananaach();
+          screamer();
+          img.src =
+            "/Images/360_F_1634119274_aqm98QjTB8X95MBqQlbD5XtpmqWkkvMG.jpg";
+        } else {
+          randomcat = Math.floor(Math.random() * 30) + 1;
+          img.src = "/cats/cat-" + randomcat + ".png";
         }
-        btn = document.createElement("button");
-        btn.textContent = "generate cat"
-        btn.style.display = "block";
-        btn.style.marginLeft = "auto";
-        btn.style.marginRight = "auto";
-        btn.onclick = changeCat;
-        document.body.appendChild(btn)
+      }
+      btn = document.createElement("button");
+      btn.textContent = "generate cat";
+      btn.style.display = "block";
+      btn.style.marginLeft = "auto";
+      btn.style.marginRight = "auto";
+      btn.onclick = changeCat;
+      document.body.appendChild(btn);
     </script>
-</body>
+  </body>
 </html>
