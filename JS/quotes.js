@@ -38,7 +38,17 @@ const quotes = [
   "Believe in Yourself!",
   "SONIC, DEAD OR ALIVE, IS MINE.",
   "The master plan!",
-  "https://www.youtube.com/watch?v=7iFXyLah2oQ&pp=ygUMdXNlcm5hbWUgNjY20gcJCbIJAYcqIYzv"
+  "https://www.youtube.com/watch?v=7iFXyLah2oQ&pp=ygUMdXNlcm5hbWUgNjY20gcJCbIJAYcqIYzv",
+  "I'm Not Annoying, I'm An Orange!",
+  "do you love me? i love you.",
+  "El Hombre Huevo",
+  "OBEY WEEGEE, DESTROY MARIO",
+  "why are you gay",
+  "thanks for coming!",
+  "Come on everybody, Smile Smile Smile!",
+  "Fill my heart up with sunshine sunshine!",
+  "beware the hash slinging slasher",
+  ""
 ];
 const randquote = Math.floor(Math.random() * quotes.length);
 mequot.textContent = quotes[randquote];
