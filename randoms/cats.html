@@ -20,8 +20,12 @@
             100% {background-color: violet;}
         }
     </style>
-            <script>
-      function screamer() {
+    <script src="/JS/Achievements.js"></script>
+</head>
+<body>
+    <audio src="/Audio/kitty.mp3" autoplay loop></audio>
+    <script>
+              function screamer() {
         const snd = new Audio("Audio/bananasong.mp3");
         const screamer = new Audio("Audio/screamer.mp3");
         snd.play();
@@ -34,11 +38,6 @@
           });
         });
       }
-    </script>
-</head>
-<body>
-    <audio src="/Audio/kitty.mp3" autoplay loop></audio>
-    <script>
         img = new Image();
         img.style.marginLeft = "auto";
         img.style.marginRight = "auto";
@@ -49,7 +48,8 @@
         randomcat = Math.floor(Math.random() * 30)+1;
         img.src = "/cats/cat-"+randomcat+".png"
         function changeCat(){
-            if (Math.random() <= 0.25){
+            const rand = Math.random()
+            if (rand <= 0.25){
                 bananaach()
                 screamer()
                 img.src = "/Images/360_F_1634119274_aqm98QjTB8X95MBqQlbD5XtpmqWkkvMG.jpg"
