@@ -48,7 +48,8 @@ const quotes = [
   "Come on everybody, Smile Smile Smile!",
   "Fill my heart up with sunshine sunshine!",
   "beware the hash slinging slasher",
-  ""
+  "Hey Pear Watch Out! Salvation Is Near!",
+  "Oh buddy, Our Legacy... ITS OVER!"
 ];
 const randquote = Math.floor(Math.random() * quotes.length);
 mequot.textContent = quotes[randquote];
