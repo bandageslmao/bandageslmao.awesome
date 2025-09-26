@@ -37,18 +37,20 @@
     <script src="/JS/Achievements.js"></script>
   </head>
   <body>
-    <audio src="/Audio/kitty.mp3" autoplay loop></audio>
+    <audio id="audioforcats" src="/Audio/kitty.mp3" autoplay loop></audio>
     <script>
       function screamer() {
-        const snd = new Audio("Audio/bananasong.mp3");
-        const screamer = new Audio("Audio/screamer.mp3");
+        const bgm = document.getElementById("audioforcats")
+        const snd = new Audio("/Audio/bananasong.mp3");
+        const screamer = new Audio("/Audio/screamer.mp3");
+        bgm.pause();
         snd.play();
         snd.addEventListener("ended", function () {
           document.body.style.backgroundImage = 'url("Images/dollthing0.jpg")';
           document.body.style.backgroundSize = "cover";
           screamer.play();
           screamer.addEventListener("ended", function () {
-            window.location.href = "index.html";
+            window.location.href = "/index.html";
           });
         });
       }

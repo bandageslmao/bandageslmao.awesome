@@ -12,13 +12,13 @@ const bgms = [
   "TropicalCrust",
   "CrackedEmpire",
   "FriendsNoMore",
-    "Blimey!",
-    "Metropolis",
-    "mii",
-    "Spongetastic!",
-    "wii party",
-    "lies",
-    "ssb"
+  "Blimey!",
+  "Metropolis",
+  "mii",
+  "Spongetastic!",
+  "wii party",
+  "lies",
+  "ssb"
 ];
 audio = document.createElement("audio");
 document.body.appendChild(audio);
@@ -45,17 +45,17 @@ function randomizer() {
     tbs();
   } else {
     const bgm =
-      "Audio/" + bgms[Math.floor(Math.random() * bgms.length)] + ".mp3";
+      "RandomizableAudio/" + bgms[Math.floor(Math.random() * bgms.length)] + ".mp3";
     audio.src = bgm;
     audio.volume = 0.5;
     audio.play().catch((err) => {
       activateautoplay.hidden = false;
       console.error("audio failed womp", err);
     });
-    if (bgm === "Audio/FeelTheFury.mp3") {
+    if (bgm === "RandomizableAudio/FeelTheFury.mp3") {
       thatprimalrage();
     }
-    if (bgm === "Audio/BreakFree.mp3") {
+    if (bgm === "RandomizableAudio/BreakFree.mp3") {
       brokenfree();
     }
   }

@@ -1,21 +1,26 @@
+function acimg(achievement) {
+  img = document.createElement("img");
+  img.style.position = "fixed";
+  img.style.bottom = 0;
+  img.style.left = 0;
+  img.style.right = 0;
+  img.style.margin = "auto";
+  img.style.width = 200;
+  document.body.appendChild(img);
+  const src = "/Achievements/" + achievement + ".png";
+  img.src = src;
+  setTimeout(() => {
+    img.style.display = "none";
+  }, 3000);
+}
+
 function noscoped() {
   if (localStorage.getItem("GETNOSCOPEDDD") !== "True") {
     snd = new Audio("Audio/getnoscoped.mp3");
     snd.play();
     snd.volume = 0.5;
     localStorage.setItem("GETNOSCOPEDDD", "True");
-    img = document.createElement("img");
-    img.style.position = "fixed";
-    img.style.bottom = 0;
-    img.style.left = 0;
-    img.style.right = 0;
-    img.style.margin = "auto";
-    img.style.width = 200;
-    document.body.appendChild(img);
-    img.src = "Achievements/noscoped.png";
-    setTimeout(() => {
-      img.style.display = "none";
-    }, 3000);
+    acimg("noscoped");
   }
 }
 
@@ -25,18 +30,7 @@ function thatprimalrage() {
     snd.play();
     snd.volume = 0.5;
     localStorage.setItem("FeelTheFury", "True");
-    img = document.createElement("img");
-    img.style.position = "fixed";
-    img.style.bottom = 0;
-    img.style.left = 0;
-    img.style.right = 0;
-    img.style.margin = "auto";
-    img.style.width = 200;
-    document.body.appendChild(img);
-    img.src = "Achievements/canyoufeelit.png";
-    setTimeout(() => {
-      img.style.display = "none";
-    }, 3000);
+    acimg("canyoufeelit");
   }
 }
 
@@ -46,18 +40,7 @@ function brokenfree() {
     snd.play();
     snd.volume = 0.5;
     localStorage.setItem("BreakFree", "True");
-    img = document.createElement("img");
-    img.style.position = "fixed";
-    img.style.bottom = 0;
-    img.style.left = 0;
-    img.style.right = 0;
-    img.style.margin = "auto";
-    img.style.width = 200;
-    document.body.appendChild(img);
-    img.src = "Achievements/brokenfree.png";
-    setTimeout(() => {
-      img.style.display = "none";
-    }, 3000);
+    acimg("brokenfree");
   }
 }
 
@@ -67,95 +50,40 @@ function creepypastafunc() {
     snd.play();
     snd.volume = 0.1;
     localStorage.setItem("creepypasta", "True");
-    img = document.createElement("img");
-    img.style.position = "fixed";
-    img.style.bottom = 0;
-    img.style.left = 0;
-    img.style.right = 0;
-    img.style.margin = "auto";
-    img.style.width = 200;
-    document.body.appendChild(img);
-    img.src = "Achievements/creepypasta.png";
-    setTimeout(() => {
-      img.style.display = "none";
-    }, 3000);
+    acimg("creepypasta");
   }
 }
 
 function tbs() {
   if (localStorage.getItem("NullVoid") !== "True") {
     localStorage.setItem("NullVoid", "True");
-    img = document.createElement("img");
-    img.style.position = "fixed";
-    img.style.bottom = 0;
-    img.style.left = 0;
-    img.style.right = 0;
-    img.style.margin = "auto";
-    img.style.width = 200;
-    document.body.appendChild(img);
-    img.src = "Achievements/nullach.png";
-    setTimeout(() => {
-      img.style.display = "none";
-    }, 3000);
+    acimg("nullach");
   }
 }
 
 if (localStorage.getItem("Visit!") !== "True") {
-    localStorage.setItem("Visit", "True");
-    snd = new Audio("Audio/achieve1.mp3");
-    snd.play();
-    localStorage.setItem("Visit!", "True");
-    img = document.createElement("img");
-    img.style.position = "fixed";
-    img.style.bottom = 0;
-    img.style.left = 0;
-    img.style.right = 0;
-    img.style.margin = "auto";
-    img.style.width = 200;
-    document.body.appendChild(img);
-    img.src = "Achievements/visit.png";
-    setTimeout(() => {
-        img.style.display = "none";
-    }, 3000);
+  localStorage.setItem("Visit", "True");
+  snd = new Audio("Audio/achieve1.mp3");
+  snd.play();
+  localStorage.setItem("Visit!", "True");
+  acimg("visit");
 }
-function bald(){
-    if (localStorage.getItem("Oh, Hi!") !== "True") {
-        localStorage.setItem("Oh, Hi!", "True");
-        snd = new Audio("Audio/bald.mp3");
-        snd.play();
-    img = document.createElement("img");
-    img.style.position = "fixed";
-    img.style.bottom = 0;
-    img.style.left = 0;
-    img.style.right = 0;
-    img.style.margin = "auto";
-    img.style.width = 200;
-    document.body.appendChild(img);
-    img.src = "Achievements/oops wrong game lol.png";
-    setTimeout(() => {
-      img.style.display = "none";
-    }, 3000);
-    }
+function bald() {
+  if (localStorage.getItem("Oh, Hi!") !== "True") {
+    localStorage.setItem("Oh, Hi!", "True");
+    snd = new Audio("Audio/bald.mp3");
+    snd.play();
+    acimg("baldi");
+  }
 }
 
-function bananaach(){
+function bananaach() {
   if (localStorage.getItem("Banana = :rage:") !== "True") {
     localStorage.setItem("Banana = :rage:", "True");
-        img = document.createElement("img");
-    img.style.position = "fixed";
-    img.style.bottom = 0;
-    img.style.left = 0;
-    img.style.right = 0;
-    img.style.margin = "auto";
-    img.style.width = 200;
-    document.body.appendChild(img);
-    img.src = "Achievements/banan.png";
-    setTimeout(() => {
-      img.style.display = "none";
-    }, 3000);
+    acimg("banan");
   }
 }
 
 function reset() {
-  localStorage.clear()
+  localStorage.clear();
 }
