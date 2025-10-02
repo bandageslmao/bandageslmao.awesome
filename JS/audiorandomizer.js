@@ -21,10 +21,12 @@ const bgms = [
   "ssb"
 ];
 audio = document.createElement("audio");
+audio.play()
+function notplaying(){
 document.body.appendChild(audio);
 audio.controls = false;
 activateautoplay = document.createElement("button");
-activateautoplay.hidden = true;
+activateautoplay.hidden = false;
 activateautoplay.textContent =
   "Hey! your autoplay's off! click me to turn it on!";
 activateautoplay.onclick = () => {
@@ -32,6 +34,7 @@ activateautoplay.onclick = () => {
   activateautoplay.hidden = true;
 };
 document.body.appendChild(activateautoplay);
+}
 
 function randomizer() {
   if (Math.random() < 0.1) {
@@ -39,8 +42,7 @@ function randomizer() {
     audio.volume = 1;
     audio.loop = true
     audio.play().catch((err) => {
-      activateautoplay.hidden = false;
-      console.error("audio failed womp", err);
+      notplaying()
     });
     tbs();
   } else {
@@ -49,8 +51,7 @@ function randomizer() {
     audio.src = bgm;
     audio.volume = 0.5;
     audio.play().catch((err) => {
-      activateautoplay.hidden = false;
-      console.error("audio failed womp", err);
+      notplaying()
     });
     if (bgm === "RandomizableAudio/FeelTheFury.mp3") {
       thatprimalrage();

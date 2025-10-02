@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bandageslmao.awesome</title>
+    <script>
+      const audio = new Audio("/Audio/clickersong.mp3");
+      audio.play()
+    </script>
+  </head>
+  <body>
+    <button
+      style="margin: auto; display: block; width: 190px; height: 190px"
+      onclick="increment()"
+    >
+      <img src="/Images/AO.png" style="margin-left: -25px; margin-top: -25px" />
+    </button>
+    <h1 id="counter" style="text-align: center"></h1>
+    <script>
+      const count = document.getElementById("counter");
+      count.textContent = localStorage.getItem("Clicks");
+      function increment() {
+        if (localStorage.getItem("Clicks") === null) {
+          localStorage.setItem("Clicks", 0);
+        }
+        const count = document.getElementById("counter");
+        const countofclicks = parseInt(localStorage.getItem("Clicks"));
+        const toadd = countofclicks + 1;
+        localStorage.setItem("Clicks", toadd);
+        count.textContent = localStorage.getItem("Clicks");
+      }
+    </script>
+  </body>
+</html>
