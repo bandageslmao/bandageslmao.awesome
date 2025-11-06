@@ -1,0 +1,14 @@
+        @font-face {
+            font-family: "win98";
+            src: url("./fonts/98.ttf");
+        }
+        body {
+            background-color: black;
+            cursor: none;
+        }
+        button {
+            font-family: "win98";
+            background: none;
+            outline: none;
+            border: none;
+        }
