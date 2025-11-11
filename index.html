@@ -6,8 +6,28 @@
     <title>Document</title>
     <script src="./data.js"></script>
     <script src="./maintenence.js"></script>
+    <script src="./javascript/clicksounds.js"></script>
+    <style>
+        body{
+            cursor: url("./cursors/roblox_default.png"), auto;
+        }
+        button{
+            cursor: url("./cursors/roblox_hover.png"), auto;
+            float: left;
+        }
+    </style>
 </head>
 <body>
     <p>rescripting the site plz wait...</p>
+    <p id="pointcounter"></p>
+    <button id="reset" onmouseenter="hover()">reset points</button>
+    <button onclick="window.location.href = './video.html';">go test the wip video page ig</button>
+    <audio autoplay controls src="./music/pagespecific/flashmanstage.mp3"></audio>
+    <script>
+    var pointcounter = document.getElementById("pointcounter")
+    var reset = document.getElementById("reset")
+    reset.onclick = function reset(){localStorage.setItem("Points",0)}
+    pointcounter.textContent = "Points:" + localStorage.getItem("Points")
+    </script>
 </body>
 </html>
