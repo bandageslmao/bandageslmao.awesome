@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Retro 2007 HTML5 Player</title>
+  <style>
+    body {
+      background-color: #111;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .player {
+      background-color: #000;
+      width: 640px;
+      height: 390px;
+      position: relative;
+      border: 2px solid #555;
+      box-shadow: 0 0 10px #000;
+    }
+    video {
+      width: 100%;
+      height: 100%;
+    }
+    .logo {
+      position: absolute;
+      bottom: 8px;
+      left: 8px;
+      font-family: Arial, sans-serif;
+      color: white;
+      font-weight: bold;
+      font-size: 14px;
+      background: rgba(0,0,0,0.6);
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="player">
+    <video controls autoplay>
+      <source src="./Videos/myvideo.mp4" type="video/mp4">
+    </video>
+    <div class="logo">YouTube 2007</div>
+  </div>
+</body>
+</html>
