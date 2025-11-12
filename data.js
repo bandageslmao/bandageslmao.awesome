@@ -4,6 +4,12 @@ if (localStorage.getItem("Visited") ===! true){
     localStorage.setItem("Points",0)
 }
 
+function texttest(){
+    const addition = document.createElement('p')
+    addition.style.fontFamily = ""
+    addition.textContent = "YTPS:"
+}
+
 function gainpoints(amnt){
     const pointsound = new Audio
     pointsound.src = "./sfx/gainpoints.mp3"
