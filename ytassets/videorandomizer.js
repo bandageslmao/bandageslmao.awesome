@@ -1,7 +1,7 @@
 var videoplayer = document.getElementById('myVideo')
 const from = document.getElementById('channeltext')
 var played = false
-const videos = ["eggman.mp4","hexlescream.mp4","ithurts.mp4","juggle.mp4","lebron.mp4","neighbor.mp4","slenderman vs morty.mp4","speedangry.mp4","superspeed64.mp4"]
+const videos = ["eggman.mp4","hexlescream.mp4","ithurts.mp4","juggle.mp4","lebron.mp4","neighbor.mp4","slenderman vs morty.mp4","speedangry.mp4","superspeed64.mp4","diddybludonthecalculator.mov","geeked.mov","gomer.mp4","kayloo.mp4","lugi.mp4","max.mp4","packgod.mp4","sahur.mp4","truthhurts.mp4","whereisdiddy.mp4"]
 var vidnumber = Math.floor(Math.random()* videos.length)
 var vid2play = videos[vidnumber]
 videoplayer.src = "./Videos/" + vid2play
