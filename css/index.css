@@ -62,6 +62,16 @@
     font-family: 'Comic Sans MS';
 }
 
+.bigbox button{
+    border: 0;
+    padding: 0;
+}
+
+.bigbox img{
+    width: 45px;
+    height: 45px;
+}
+
 .advertisement{
     margin-left: 17%;
     margin-top: -154px;
