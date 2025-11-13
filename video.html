@@ -54,7 +54,7 @@
     .watch-layout { max-width: 980px; margin: 10px auto 24px; padding: 0 16px; display: grid; grid-template-columns: 425px 300px; column-gap: 18px; row-gap: 14px; grid-template-areas: "player side" "details side"; align-items: start; }
     .watch-left { grid-area: player; width: 425px; }
     .watch-right { grid-area: side; width: 300px; }
-    .player-container { max-width: 425px; }
+    .player-container { max-width: 425px; max-height: 450px; }
     .watch-title { font-size:16px; font-weight:bold; margin: 10px 0 6px; }
     .video-info { border: 1px solid #d0c28a; background: #fffbe6; padding: 8px 10px; font-size: 12px; line-height: 1.4; }
     .video-info h1 { font-size: 16px; margin: 0 0 6px; }
@@ -64,9 +64,9 @@
     .watch-title-left { font-size: 18px; font-weight: bold; margin: 6px 0; }
 
     /* Classic 2007-sized player */
-    .watch-classic .player-container { width: 425px; }
+    .watch-classic .player-container { width: 425px;  width: 425px;}
     .watch-classic .video-area { min-width: 425px !important; min-height: 355px !important; }
-    .watch-classic .video-area video { width: 425px !important; height: auto; }
+    .watch-classic .video-area video { width: 425px !important; height: 355; }
     .watch-classic #ytContainer, .watch-classic #ytContainer iframe { width: 425px !important; height: 355px !important; }
     .watch-classic .bottom-bar { width: 425px; }
 

@@ -10,6 +10,7 @@
     <style>
         body{
             cursor: url("./cursors/roblox_default.png"), auto;
+            height: 100vh;
         }
         button{
             cursor: url("./cursors/roblox_hover.png"), auto;
@@ -22,12 +23,16 @@
     <p id="pointcounter"></p>
     <button id="reset" onmouseenter="hover()">reset points</button>
     <button onclick="window.location.href = './video.html';">go test the wip video page ig</button>
-    <audio autoplay controls src="./music/pagespecific/flashmanstage.mp3"></audio>
+    <audio autoplay controls loop src="./music/pagespecific/flashmanstage.mp3"></audio>
+    <button onclick="texttest()">click me to test the point gui</button>
     <script>
     var pointcounter = document.getElementById("pointcounter")
     var reset = document.getElementById("reset")
     reset.onclick = function reset(){localStorage.setItem("Points",0)}
     pointcounter.textContent = "Points:" + localStorage.getItem("Points")
     </script>
+    <div class="backdiv">
+
+    </div>
 </body>
 </html>

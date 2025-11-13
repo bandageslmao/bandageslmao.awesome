@@ -5,9 +5,30 @@ if (localStorage.getItem("Visited") ===! true){
 }
 
 function texttest(){
-    const addition = document.createElement('p')
+    const addition = document.createElement('h1')
+    addition.style.textAlign = 'center'
+    var animation = addition.animate(
+        [
+            { transform: 'translateY(500%)'},
+            { transform: 'translateY(-10%)'},
+            { transform: 'translateY(-10%)'},
+            { transform: 'translateY(-10%)'},
+            { transform: 'translateY(-10%)'},
+            { transform: 'translateY(-10%)'},
+            { transform: 'translateY(125%)'}
+        ],
+        {
+            duration: 3000,
+            iterations: 1
+        }
+    )
+    document.body.appendChild(addition)
     addition.style.fontFamily = ""
-    addition.textContent = "YTPS:"
+    addition.style.zIndex = '10'
+    addition.textContent = "YTPS: " + Points
+    animation.addEventListener('finish',function(){
+        addition.remove()
+    })
 }
 
 function gainpoints(amnt){

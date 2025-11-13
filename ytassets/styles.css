@@ -20,6 +20,7 @@ body {
 .player-container {
   position: relative; /* Ensure positioning context */
   z-index: 0; /* baseline */
+  max-height: 325px;
 }
 
 .yt-input-row {
@@ -115,6 +116,7 @@ background: #000;
   background-color: #000;
   min-width: 100%;
   min-height: auto;
+  max-height: 325px;
 }
 
 #ytContainer, #ytContainer iframe {
@@ -184,6 +186,7 @@ will-change: background-image;
 video {
   position: relative;
   z-index: 1; 
+  max-height: 325px;
 }
 
 .ended-buttons {
