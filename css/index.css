@@ -26,7 +26,7 @@
 .top{
     border-bottom: 2px solid black;
     background-color: #cccccc;
-    width: 200px;
+    width: 100%;
     height: 20px;
 }
 
@@ -47,7 +47,7 @@
 
 .bigbox{
     border: 2px solid black;
-    margin-left: 38%;
+    margin-left: 500px;
     margin-top: -253px;
     background-color: #eeeeee;
     width: 59.15vw;
@@ -74,11 +74,11 @@
 
 .advertisement{
     margin-left: 17%;
-    margin-top: -154px;
+    margin-top: -300px;
     border: 2px solid black;
     background-color: #eeeeee;
     width: 200px;
-    height: 150px;
+    height: 298px;
 }
 
 .advertisement img{
