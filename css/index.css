@@ -93,16 +93,16 @@
 }
 
 body {
-    background-image: url("/images/background.jpeg");
+    background-image: url("images/background.jpeg");
     background-size: 100vw 100vh;
-    cursor: url("/cursors/roblox_default.png"), auto;
+    cursor: url("cursors/roblox_default.png"), auto;
     display: inline-block;
 }
 
 button {
-    cursor: url("/cursors/roblox_hover.png"), auto;
+    cursor: url("cursors/roblox_hover.png"), auto;
 }
 
 a {
-    cursor: url("/cursors/roblox_hover.png"), auto;
+    cursor: url("cursors/roblox_hover.png"), auto;
 }

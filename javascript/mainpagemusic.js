@@ -2,7 +2,7 @@ var muted = false
 var songs = ["buildyourowngame.mp3","crossroadtimes.mp3","happydayinrobloxhq.mp3","mule.mp3","noobalert.mp3","robloxtheme.mp3"]
 var selectedsong = Math.floor(Math.random()* songs.length)
 var song = new Audio
-song.src = "/music/pagespecific/home/" + songs[selectedsong]
+song.src = "music/pagespecific/home/" + songs[selectedsong]
 song.volume = 0.5
 song.loop = true
 function autoplayenabler(){
