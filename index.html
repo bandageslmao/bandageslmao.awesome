@@ -7,32 +7,38 @@
     <script src="./data.js"></script>
     <script src="./maintenence.js"></script>
     <script src="./javascript/clicksounds.js"></script>
-    <style>
-        body{
-            cursor: url("./cursors/roblox_default.png"), auto;
-            height: 100vh;
-        }
-        button{
-            cursor: url("./cursors/roblox_hover.png"), auto;
-            float: left;
-        }
-    </style>
+    <link rel="stylesheet" href="/css/index.css">
 </head>
 <body>
-    <p>rescripting the site plz wait...</p>
-    <p id="pointcounter"></p>
-    <button id="reset" onmouseenter="hover()">reset points</button>
-    <button onclick="window.location.href = './video.html';">go test the wip video page ig</button>
-    <audio autoplay controls loop src="./music/pagespecific/flashmanstage.mp3"></audio>
-    <button onclick="texttest()">click me to test the point gui</button>
-    <script>
-    var pointcounter = document.getElementById("pointcounter")
-    var reset = document.getElementById("reset")
-    reset.onclick = function reset(){localStorage.setItem("Points",0)}
-    pointcounter.textContent = "Points:" + localStorage.getItem("Points")
-    </script>
-    <div class="backdiv">
-
+    <audio autoplay loop id="audioelement"></audio>
+    <div class="header">
+        <img id="" src="./images/banner.png">
+        <a href="./pages/iknowwhatyouare.html">My Meowl |</a>
+        <a href="./pages/iknowwhatyouare.html"> Games |</a>
+        <a href="./pages/iknowwhatyouare.html"> Random Page |</a>
+        <a href="./pages/video.html"> AwesomeTube |</a>
+        <a href="./pages/iknowwhatyouare.html"> Help</a>
     </div>
+    <div class="loginbox">
+        <div class="top">
+            <p>Socials</p>
+        </div>
+    </div>
+    <div id="bigbox" class="bigbox">
+        <h2>BANDAGESLMAO.AWESOME Cool Website</h2>
+        <h4>This Website Is Free, And Fun!</h4>
+    </div>
+    <div class="advertisement">
+        <p>your image could be here!</p>
+    </div>
+        <script>
+        var masterplan = document.getElementById('masterplan')
+        masterplan.addEventListener("click", function(){
+            var sound = new Audio
+            sound.src = "/sfx/masterplan.mp3"
+            sound.play()
+        })
+    </script>
+    <script src="./javascript/mainpagemusic.js"></script>
 </body>
 </html>
