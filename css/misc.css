@@ -1,0 +1,13 @@
+body {
+    background-image: url("../images/background.jpeg");
+    background-size: 100vw 100vh;
+    cursor: url("../cursors/roblox_default.png"), auto;
+}
+
+button {
+    cursor: url("../cursors/roblox_hover.png"), auto;
+}
+
+a {
+    cursor: url("../cursors/roblox_hover.png"), auto;
+}

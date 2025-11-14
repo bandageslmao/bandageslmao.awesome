@@ -1,19 +1,19 @@
 function click(){
     var snap = new Audio();
-    snap.src = "./sfx/snap.wav";
+    snap.src = "../sfx/snap.wav";
     snap.volume = 0.5
     snap.play();
 }
 
 function hover(){
     var button = new Audio();
-    button.src = "./sfx/electronicpingshort.wav";
+    button.src = "../sfx/electronicpingshort.wav";
     button.play();
 }
 
 function leave(){
     var button = new Audio();
-    button.src = "./sfx/Kerplunk.wav"
+    button.src = "../sfx/Kerplunk.wav"
     button.play()
 }
 
