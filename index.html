@@ -1,52 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <base href="/bandageslmao.awesome/">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="data.js"></script>
-    <script src="maintenence.js"></script>
+    <link rel="stylesheet" href="css/banner.css" />
+    <link rel="stylesheet" href="css/misc.css" />
+    <link rel="stylesheet" href="css/index.css" />
     <script src="javascript/clicksounds.js"></script>
-    <link rel="stylesheet" href="css/index.css">
-</head>
-<body>
-    <audio autoplay loop id="audioelement"></audio>
-    <div class="header">
-        <img id="banner" src="./images/banner.png">
-        <a href="./pages/iknowwhatyouare.html">My Meowl |</a>
-        <a href="./pages/iknowwhatyouare.html"> Games |</a>
-        <a href="./pages/iknowwhatyouare.html"> Random Page |</a>
-        <a href="./pages/video.html"> AwesomeTube |</a>
-        <a href="./pages/iknowwhatyouare.html"> Help</a>
-    </div>
-    <div class="loginbox">
-        <div class="top">
-            <p>Socials</p>
+  </head>
+  <body>
+    <center>
+      <div class="header">
+        <img src="../images/banner.png" />
+        <div>
+          <a href="index.html">Home |</a>
+          <a href="pages/games.html"> Games |</a>
         </div>
-    </div>
-    <div id="bigbox" class="bigbox">
-        <h2>BANDAGESLMAO.AWESOME Cool Website</h2>
-        <h4>This Website Is Free, And Fun!</h4>
-        <button id="mute-unmute"><img style="margin-top: 242px" src="images/delete.png"></button>
-    </div>
-    <div class="advertisement">
-        <p>your image could be here!</p>
-    </div>
-        <script>
-        var number = Math.random()
-        if (number <= 0.50){
-        var banner = document.getElementById('banner')
-        banner.id = "masterplan"
-        banner.src = "images/masterplan.png"
-        var masterplan = document.getElementById('masterplan')
-        masterplan.addEventListener("click", function(){
-            var sound = new Audio
-            sound.src = "sfx/masterplan.mp3"
-            sound.play()
-        })
-        }
-    </script>
-    <script src="javascript/mainpagemusic.js"></script>
-</body>
+      </div>
+      <div class="container">
+        <div class="leftside">
+          <div class="signupbox">
+            <div class="smallsection">
+              <h3>Socials</h3>
+            </div>
+          </div>
+          <div class="adbox"></div>
+        </div>
+        <div class="rightside">
+          <h3>BANDAGESLMAO.AWESOME cool website</h3>
+          <p>this website is like so awesome wow wow</p>
+          <div class="list">
+            <p>
+              <img src="images/Bc_symbol.png" />play AWESOME games!!! <br />
+              wowwow so cool right
+            </p>
+          </div>
+        </div>
+      </div>
+    </center>
+    <script src="javascript/musicrandomizer.js"></script>
+  </body>
 </html>

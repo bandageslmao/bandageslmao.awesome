@@ -1,49 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/gamespage.css">
-    <link rel="stylesheet" href="../css/misc.css">
-    <link rel="stylesheet" href="../css/banner.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/gamespage.css" />
+    <link rel="stylesheet" href="../css/misc.css" />
+    <link rel="stylesheet" href="../css/banner.css" />
     <script src="../javascript/clicksounds.js"></script>
-</head>
+    <script src="../javascript/musicrandomizer.js"></script>
+  </head>
 
-<body>
+  <body>
     <center>
-        <div class="header">
-            <img src="../images/banner.png">
-            <div>
-                <a href="../index.html">Home |</a>
-            </div>
+      <div class="header">
+        <img src="../images/banner.png" />
+        <div>
+          <a href="../index.html">Home |</a>
+          <a href="../pages/games.html"> Games |</a>
         </div>
-        <div class="container">
-            <div class="sidebar">
-                <h3>Pages</h3>
-                <a id="button1">Important People</a>
-                <a id="button2">Cool People</a>
-            </div>
-            <div class="mainpart">
-                <div class="important"></div>
-                <div hidden class="cool"></div>
-            </div>
+      </div>
+      <div class="container">
+        <div class="sidebar">
+          <h1>Pages</h1>
+          <h5>Browse</h5>
+          <button id="button1">Most Popular</button>
+          <button id="button2">Top Favorites</button>
         </div>
+        <div class="mainpart">
+          <div id="tab1" class="important"></div>
+          <div hidden id="tab2" class="cool"></div>
+        </div>
+      </div>
     </center>
     <script>
-        var b1 = document.getElementById('button1')
-        var b2 = document.getElementById('button2')
-        function page1(){
-            b1.hidden = false
-            b2.hidden =true
-        }
-        function page2(){
-            b1.hidden = true
-            b2.hidden = false
-        }
-        b1.onclick = page1()
-        b2.onclick = page2()
+      var important = document.getElementById("tab1");
+      var cool = document.getElementById("tab2");
+      var b1 = document.getElementById("button1");
+      var b2 = document.getElementById("button2");
+      b1.addEventListener("click", function (event) {
+        console.log("button1");
+        event.preventDefault();
+        important.hidden = false;
+        cool.hidden = true;
+      });
+      b2.addEventListener("click", function (event) {
+        console.log("button2");
+        event.preventDefault();
+        important.hidden = true;
+        cool.hidden = false;
+      });
     </script>
-</body>
-
+  </body>
 </html>
