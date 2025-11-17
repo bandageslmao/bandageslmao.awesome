@@ -4,8 +4,12 @@
     background-color: white;
     border: 2px solid black;
 }
+.container img{
+    width: 25vw;
+    height: 50vh;
+}
 .container button{
-    margin-top: 15%;
+    margin-top: 5%;
     border: 0;
     background-color: transparent;
 }

@@ -241,18 +241,18 @@ const loadingFrameDelay = 100; // ms between loading frames
 function updateLoadingFrame() {
     if (loadingFrame < loadingTotalFrames) {
       loadingFrame++;
-      loadingIndicator.style.backgroundImage = `url('./ytassets/assets/loading_frames/${loadingFrame}.png')`;
+      loadingIndicator.style.backgroundImage = `url('../ytassets/assets/loading_frames/${loadingFrame}.png')`;
     } else {
       // Loop back to frame 1, no fade needed, just continuous loop
       loadingFrame = 1;
-      loadingIndicator.style.backgroundImage = `url('./ytassets/assets/loading_frames/1.png')`;
+      loadingIndicator.style.backgroundImage = `url('../ytassets/assets/loading_frames/1.png')`;
     }
   }
   
   function startLoadingAnimation() {
     if (!loadingInterval) {
       loadingFrame = 1;
-      loadingIndicator.style.backgroundImage = `url('./ytassets/assets/loading_frames/1.png')`;
+      loadingIndicator.style.backgroundImage = `url('../ytassets/assets/loading_frames/1.png')`;
       loadingIndicator.style.display = 'block'; // show the indicator
       loadingInterval = setInterval(updateLoadingFrame, loadingFrameDelay);
     }
@@ -265,7 +265,7 @@ function updateLoadingFrame() {
       loadingIndicator.style.display = 'none'; // hide the indicator
       // reset to frame 1
       loadingFrame = 1;
-      loadingIndicator.style.backgroundImage = `url('./ytassets/assets/loading_frames/1.png')`;
+      loadingIndicator.style.backgroundImage = `url('../ytassets/assets/loading_frames/1.png')`;
     }
   }
 
@@ -482,19 +482,19 @@ progressSection.addEventListener('click', (e) => {
 function updateVolumeIcon(volPercent) {
   let iconFile;
   if (volPercent === 0) {
-    iconFile = '././ytassets/assets/volume/volume_icon.png';
+    iconFile = './../ytassets/assets/volume/volume_icon.png';
     volumeBtn.classList.add('muted');
   } else if (volPercent <= 25) {
-    iconFile = '././ytassets/assets/volume/volume_icon_1.png';
+    iconFile = './../ytassets/assets/volume/volume_icon_1.png';
     volumeBtn.classList.remove('muted');
   } else if (volPercent <= 50) {
-    iconFile = '././ytassets/assets/volume/volume_icon_2.png';
+    iconFile = './../ytassets/assets/volume/volume_icon_2.png';
     volumeBtn.classList.remove('muted');
   } else if (volPercent <= 75) {
-    iconFile = '././ytassets/assets/volume/volume_icon_3.png';
+    iconFile = './../ytassets/assets/volume/volume_icon_3.png';
     volumeBtn.classList.remove('muted');
   } else {
-    iconFile = '././ytassets/assets/volume/volume_icon_4.png';
+    iconFile = './../ytassets/assets/volume/volume_icon_4.png';
     volumeBtn.classList.remove('muted');
   }
 
@@ -633,17 +633,17 @@ const frameDelay = 40; // ms between frames
 function updateFullscreenFrame() {
   if (fullscreenFrame < totalFrames) {
     fullscreenFrame++;
-    fullscreenBtn.style.backgroundImage = `url('./ytassets/assets/fullscreen_button/${fullscreenFrame}.png')`;
+    fullscreenBtn.style.backgroundImage = `url('../ytassets/assets/fullscreen_button/${fullscreenFrame}.png')`;
   } else {
     fullscreenFrame = 1;
-    fullscreenBtn.style.backgroundImage = `url('./ytassets/assets/fullscreen_button/1.png')`;
+    fullscreenBtn.style.backgroundImage = `url('../ytassets/assets/fullscreen_button/1.png')`;
   }
 }
 
 function startFullscreenAnimation() {
   if (!fullscreenInterval) {
     fullscreenFrame = 1;
-    fullscreenBtn.style.backgroundImage = `url('./ytassets/assets/fullscreen_button/1.png')`;
+    fullscreenBtn.style.backgroundImage = `url('../ytassets/assets/fullscreen_button/1.png')`;
     fullscreenBtn.style.opacity = 1; // Ensure fully visible
     fullscreenInterval = setInterval(updateFullscreenFrame, frameDelay);
   }
@@ -654,7 +654,7 @@ function stopFullscreenAnimation() {
     clearInterval(fullscreenInterval);
     fullscreenInterval = null;
     fullscreenFrame = 1;
-    fullscreenBtn.style.backgroundImage = `url('./ytassets/assets/fullscreen_button/1.png')`;
+    fullscreenBtn.style.backgroundImage = `url('../ytassets/assets/fullscreen_button/1.png')`;
   }
 }
 
@@ -679,12 +679,12 @@ attachFullscreenHoverEvents();
           if (document.fullscreenElement) {
             stopFullscreenAnimation();
             detachFullscreenHoverEvents();
-            fullscreenBtn.style.backgroundImage = `url('./ytassets/assets/fullscreen_button/exit_fullscreen.png')`;
+            fullscreenBtn.style.backgroundImage = `url('../ytassets/assets/fullscreen_button/exit_fullscreen.png')`;
             fullscreenBtn.style.backgroundSize = '45px 15px';
             fullscreenBtn.classList.add('exit-icon');
           } else {
             fullscreenBtn.classList.remove('exit-icon');
-            fullscreenBtn.style.backgroundImage = `url('./ytassets/assets/fullscreen_button/1.png')`;
+            fullscreenBtn.style.backgroundImage = `url('../ytassets/assets/fullscreen_button/1.png')`;
             fullscreenBtn.style.backgroundSize = '25px 18px';
             attachFullscreenHoverEvents();
           }
@@ -716,13 +716,13 @@ function handleFullscreenChange() {
     // Entered fullscreen
     stopFullscreenAnimation();
     detachFullscreenHoverEvents();
-    fullscreenBtn.style.backgroundImage = `url('./ytassets/assets/fullscreen_button/exit_fullscreen.png')`;
+    fullscreenBtn.style.backgroundImage = `url('../ytassets/assets/fullscreen_button/exit_fullscreen.png')`;
     fullscreenBtn.style.backgroundSize = '45px 15px';
     fullscreenBtn.classList.add('exit-icon');
   } else {
     // Exited fullscreen
     fullscreenBtn.classList.remove('exit-icon');
-    fullscreenBtn.style.backgroundImage = `url('./ytassets/assets/fullscreen_button/1.png')`;
+    fullscreenBtn.style.backgroundImage = `url('../ytassets/assets/fullscreen_button/1.png')`;
     fullscreenBtn.style.backgroundSize = '25px 18px';
     attachFullscreenHoverEvents();
   }
@@ -780,21 +780,21 @@ function preloadImages(paths) {
 function preloadUIAssets() {
   const fullscreenFrames = [];
   for (let i = 1; i <= 24; i++) {
-    fullscreenFrames.push(`./ytassets/assets/fullscreen_button/${i}.png`);
+    fullscreenFrames.push(`../ytassets/assets/fullscreen_button/${i}.png`);
   }
-  fullscreenFrames.push('./ytassets/assets/fullscreen_button/exit_fullscreen.png');
+  fullscreenFrames.push('../ytassets/assets/fullscreen_button/exit_fullscreen.png');
 
   const loadingFrames = [];
   for (let i = 1; i <= 22; i++) {
-    loadingFrames.push(`./ytassets/assets/loading_frames/${i}.png`);
+    loadingFrames.push(`../ytassets/assets/loading_frames/${i}.png`);
   }
 
   const volumeIcons = [
-    './ytassets/assets/volume/volume_icon.png',
-    './ytassets/assets/volume/volume_icon_1.png',
-    './ytassets/assets/volume/volume_icon_2.png',
-    './ytassets/assets/volume/volume_icon_3.png',
-    './ytassets/assets/volume/volume_icon_4.png'
+    '../ytassets/assets/volume/volume_icon.png',
+    '../ytassets/assets/volume/volume_icon_1.png',
+    '../ytassets/assets/volume/volume_icon_2.png',
+    '../ytassets/assets/volume/volume_icon_3.png',
+    '../ytassets/assets/volume/volume_icon_4.png'
   ];
 
   preloadImages([...fullscreenFrames, ...loadingFrames, ...volumeIcons]);
