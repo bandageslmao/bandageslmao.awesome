@@ -29,7 +29,9 @@ document.addEventListener('DOMContentLoaded', function() {
         link.addEventListener('mouseleave', leave)
     })
     buttons.forEach(button => {
-        button.addEventListener('mouseover', hover)
-        button.addEventListener('mouseleave', leave)
+        if (!button.classList.contains('meowl')){
+            button.addEventListener('mouseover', hover)
+            button.addEventListener('mouseleave', leave)
+        }
     })
 })

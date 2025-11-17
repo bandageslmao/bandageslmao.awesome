@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/meowl.css" />
+    <link rel="stylesheet" href="../css/misc.css" />
+    <link rel="stylesheet" href="../css/banner.css" />
+    <script src="../javascript/clicksounds.js"></script>
+    <script src="../javascript/musicrandomizer.js"></script>
+  </head>
+  <body>
+    <center>
+      <div class="header">
+        <img id="banner" src="../images/banner.png" />
+        <div>
+          <a href="../index.html">Home |</a>
+          <a href="../pages/games.html"> Games |</a>
+          <a href="../pages/video.html"> AwesomeTube |</a>
+          <a href="../pages/meowl.html"> My Meowl |</a>
+        </div>
+      </div>
+      <div class="container">
+        <h2 id="counter"></h2>
+        <button id="meowlbutton" class="meowl"> <img draggable="false" src="../images/meowl.webp"> </button>
+      </div>
+    </center>
+    <script>
+        var pnts = parseInt(localStorage.getItem("Meowlbucks")) || 0
+        const button = document.getElementById('meowlbutton')
+        const counter = document.getElementById('counter')
+        counter.textContent = "Meowlbucks:" + pnts
+        button.addEventListener('click', function(event){
+            pnts++
+            localStorage.setItem('Meowlbucks', pnts)
+            counter.textContent = "Meowlbucks:" + pnts
+        })
+    </script>
+  </body>
+</html>

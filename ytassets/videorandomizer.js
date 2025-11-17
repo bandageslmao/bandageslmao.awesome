@@ -4,14 +4,14 @@ var played = false
 const videos = ["eggman.mp4","hexlescream.mp4","ithurts.mp4","juggle.mp4","lebron.mp4","neighbor.mp4","slenderman vs morty.mp4","speedangry.mp4","superspeed64.mp4","diddybludonthecalculator.mov","geeked.mov","gomer.mp4","kayloo.mp4","lugi.mp4","max.mp4","packgod.mp4","sahur.mp4","truthhurts.mp4","whereisdiddy.mp4"]
 var vidnumber = Math.floor(Math.random()* videos.length)
 var vid2play = videos[vidnumber]
-videoplayer.src = "./Videos/" + vid2play
+videoplayer.src = "../Videos/" + vid2play
 videoplayer.addEventListener("ended", function(){
     if (played === false){
         gainpoints(25)
         played = true
     }else{
         var nomore = new Audio
-        nomore.src = "./sfx/nomore.mp3"
+        nomore.src = "../sfx/nomore.mp3"
         nomore.volume = 2
         nomore.play()
         console.log("nuh uh uh no more than once")

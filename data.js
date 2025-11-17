@@ -2,9 +2,7 @@ var Points = localStorage.getItem("Points")
 if (localStorage.getItem("Visited") === true){
     window.location.href = "firsttime.html"
     localStorage.setItem("Points",0)
-}
-
-function texttest(){
+    localStorage.setItem("Meowlbucks",0)
 }
 
 function gainpoints(amnt){
