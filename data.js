@@ -1,6 +1,7 @@
 if (!localStorage.getItem("Points")){
     localStorage.setItem("Points",0)
 }
+var Points = localStorage.getItem("Points")
 
 function gainpoints(amnt) {
     localStorage.setItem("Points", parseInt(Points)+ amnt)
@@ -58,6 +59,6 @@ function deduction(amnt) {
     }
 }
 
-if (parseInt(localStorage.getItem("Points")) < 0) {
+if (parseInt(Points) < 0) {
     localStorage.setItem("Points", 0)
 }
