@@ -30,7 +30,7 @@ function gainpoints(amnt) {
             { transform: 'translateX(0px)' }
         ],
         {
-            duration: 500,
+            duration: 200,
             iterations: 1
         }
     )
@@ -41,14 +41,14 @@ function gainpoints(amnt) {
                 { transform: 'translateX(100%)' }
             ],
             {
-                duration: 500,
+                duration: 200,
                 iterations: 1
             }
         )
     }, 5000);
     setTimeout(() => {
         cooldiv.remove()
-    }, 5500);
+    }, 5190);
 }
 
 function deduction(amnt) {

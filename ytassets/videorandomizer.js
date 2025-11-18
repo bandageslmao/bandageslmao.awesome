@@ -35,3 +35,30 @@ if (vid2play === "slenderman vs morty.mp4"){
 if (vid2play === "neighbor.mp4"){
     from.textContent = "Theodore Peterson"
 }
+if (vid2play === "diddybludonthecalculator.mov" || vid2play === "geeked.mov"){
+    from.textContent = "funnygreenorange"
+}
+if (vid2play === "gomer.mp4"){
+    from.textContent = "Homer Simpson"
+}
+if (vid2play === "kayloo.mp4"){
+    from.textContent = "Kayloo Anderson"
+}
+if (vid2play === "lugi.mp4"){
+    from.textContent = "Luigi & Co"
+}
+if (vid2play === "max.mp4"){
+    from.textContent = "Max Design Pro"
+}
+if (vid2play === "packgod.mp4"){
+    from.textContent = "Annoying Orange"
+}
+if (vid2play === "sahur.mp4"){
+    from.textContent = "Triple T Sahur"
+}
+if (vid2play === "truthhurts.mp4"){
+    from.textContent = "ZexenElectric"
+}
+if (vid2play === "whereisdiddy.mp4"){
+    from.textContent = "the diddy blud files"
+}

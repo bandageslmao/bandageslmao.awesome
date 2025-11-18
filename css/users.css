@@ -34,10 +34,12 @@
     flex-direction: column;
 }
 .namesect p {
+    border-bottom: 2px solid black;
     text-align: center;
     font-size: 10px;
 }
 .namesect a{
+    border-bottom: 2px solid black;
     font-family: 'Comic Sans MS';
     font-size: 10px;
     text-decoration: none;
