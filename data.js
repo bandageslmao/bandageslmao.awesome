@@ -58,6 +58,6 @@ function deduction(amnt) {
     }
 }
 
-if (parseInt(Points) < 0) {
+if (parseInt(localStorage.getItem("Points")) < 0) {
     localStorage.setItem("Points", 0)
 }
