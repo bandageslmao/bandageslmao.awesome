@@ -15,7 +15,7 @@
 .signupbox {
   border: 2px solid black;
   width: 65%;
-  height: 30%;
+  height: 50%;
   background-color: #eeeeee;
 }
 .smallsection {
@@ -24,15 +24,22 @@
   border-bottom: 2px solid black;
   background-color: #cccccc;
   width: 100%;
-  height: 15%;
+  height: 11%;
 }
 .smallsection h3 {
   margin: 0;
   padding: 0;
 }
 
+.gif{
+  width: 350px;
+  height: 305px;
+  margin-left: auto;
+}
+
 .rightside {
-  display: block;
+  display: flex;
+  flex-direction: column;
   font-family: "Comic Sans MS";
   float: right;
   width: 75%;
@@ -41,12 +48,6 @@
   background-color: #eeeeee;
   text-align: left;
   list-style-type: none;
-}
-
-.list img {
-  float: left;
-  width: 64px;
-  height: 64px;
 }
 
 .adbox {

@@ -1,10 +1,10 @@
 if (!localStorage.getItem("Points")){
-    localStorage.setItem("Points",0)
+    localStorage.setItem("Points","0")
 }
-if (!localStorage.setItem("Visited")){
-    window.location.href = "pages/firsttime.html"
+if (localStorage.getItem("Visited") !== "true"){
+    window.location.href = "../pages/firsttime.html"
 }
-var Points = localStorage.getItem("Points")
+var Points = localStorage.getItem("Points") || 0
 
 function gainpoints(amnt) {
     localStorage.setItem("Points", parseInt(Points)+ amnt)

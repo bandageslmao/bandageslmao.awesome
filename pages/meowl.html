@@ -21,6 +21,7 @@
         <a href="../pages/video.html"> AwesomeTube |</a>
         <a href="../pages/meowl.html"> My Meowl |</a>
         <a href="../pages/users.html"> Important People |</a>
+        <a href="../pages/catalog.html"> Catalog |</a>
       </div>
     </div>
     <div class="container">
@@ -44,8 +45,8 @@
       pnts++;
       localStorage.setItem("Meowlbucks", pnts);
       counter.textContent = "Meowlbucks:" + pnts;
-      if (pnts % 50 === 0){
-        gainpoints(5)
+      if (pnts % 100 === 0) {
+        gainpoints(10)
       }
     });
   </script>

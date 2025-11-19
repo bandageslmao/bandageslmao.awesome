@@ -5,8 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            localStorage.setItem("Visited", "true")
+            if (localStorage.getItem("Visited") === "true") {
+                window.location.href = "iknowwhatyouare.html"
+            }
+        })
+    </script>
     <link rel="stylesheet" href="../css/firstimepage.css">
-    <script src="../data.js"></script>
     <script src="../maintenence.js"></script>
     <script src="../javascript/98funcs.js"></script>
     <style>
@@ -29,7 +36,8 @@
             cursor: url("../cursors/xp_hover.png"), auto;
             display: block;
         }
-        .transmissionarea{
+
+        .transmissionarea {
             background-color: #c0c0c0;
             width: 50%;
             height: 45%;
@@ -44,11 +52,12 @@
         <button class="icon" style="margin-left: 15px;" onclick="fadein()"><img
                 src="../windowsxpassets/disk.ico"></button>
         <button onclick="fadein()">FORYOU.EXE</button>
-        <button class="icon" style="margin-left: 15px;" onclick="transmission()"><img src="../windowsxpassets/gourdchat.png"></button>
+        <button class="icon" style="margin-left: 15px;" onclick="transmission()"><img
+                src="../windowsxpassets/gourdchat.png"></button>
         <button onclick="transmission()"> GourdChat 1.0 </button>
         <center>
             <div class="transmissionarea">
-                
+
             </div>
         </center>
         <script>

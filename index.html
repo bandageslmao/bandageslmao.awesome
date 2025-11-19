@@ -1,58 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="css/banner.css" />
-    <link rel="stylesheet" href="css/misc.css" />
-    <link rel="stylesheet" href="css/index.css" />
-    <script src="javascript/clicksoundsroot.js"></script>
-  </head>
-  <body>
-    <center>
-      <div class="header">
-        <img id="banner" src="images/banner.png" />
-        <div>
-          <a href="index.html">Home |</a>
-          <a href="pages/games.html"> Games |</a>
-          <a href="pages/video.html"> AwesomeTube |</a>
-          <a href="pages/meowl.html"> My Meowl |</a>
-          <a href="pages/users.html"> Important People |</a>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="css/banner.css" />
+  <link rel="stylesheet" href="css/misc.css" />
+  <link rel="stylesheet" href="css/index.css" />
+  <script src="javascript/clicksoundsroot.js"></script>
+</head>
+
+<body>
+  <center>
+    <div class="header">
+      <img id="banner" src="images/banner.png" />
+      <div>
+        <a href="../index.html">Home |</a>
+        <a href="../pages/games.html"> Games |</a>
+        <a href="../pages/video.html"> AwesomeTube |</a>
+        <a href="../pages/meowl.html"> My Meowl |</a>
+        <a href="../pages/users.html"> Important People |</a>
+        <a href="../pages/catalog.html"> Catalog |</a>
       </div>
-      <div class="container">
-        <div class="leftside">
-          <div class="signupbox">
-            <div class="smallsection">
-              <h3>Socials</h3>
-            </div>
+    </div>
+    <div class="container">
+      <div class="leftside">
+        <div class="signupbox">
+          <div class="smallsection">
+            <h3>Socials</h3>
           </div>
-          <div class="adbox"></div>
         </div>
-        <div class="rightside">
-          <h3>BANDAGESLMAO.AWESOME cool website</h3>
-          <p>this website is like so awesome wow wow</p>
-          <div class="list">
-            <p>
-              <img src="images/Bc_symbol.png" />play AWESOME games!!! <br />
-              wowwow so cool right
-            </p>
-          </div>
-          <p id="pnts"></p>
-        </div>
+        <div class="adbox"></div>
       </div>
-    </center>
-    <script src="javascript/musicrandomizerroot.js"></script>
-    <script src="javascript/seasoncheckerroot.js"></script>
-    <script>
-      const masterplanevent = Math.random()
-      const banner = document.getElementById('banner')
-      if (masterplanevent <= 0.5){
-        banner.src = "images/masterplan.png"
-      }
-      const counter = document.getElementById('pnts')
-      counter.textContent = "You Have Amassed " + localStorage.getItem("Points") + " Player Points!"
-    </script>
+      <div class="rightside">
+        <h3>cool website</h3>
+        <p>this website is like so awesome wow wow</p>
+        <p id="pnts"></p>
+        <img class="gif" src="images/videoplayback.gif">
+      </div>
+    </div>
+  </center>
+  <script src="javascript/musicrandomizerroot.js"></script>
+  <script src="javascript/seasoncheckerroot.js"></script>
+  <script>
+    const masterplanevent = Math.random()
+    const banner = document.getElementById('banner')
+    if (masterplanevent <= 0.5) {
+      banner.src = "images/masterplan.png"
+    }
+  </script>
+  <script>
+    const counter = document.getElementById('pnts')
+    counter.textContent = "You Have Amassed " + localStorage.getItem("Points") + " Player Points!"
+  </script>
+  <script src="data.js"></script>
   </body>
+
 </html>
