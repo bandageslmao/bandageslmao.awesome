@@ -1,0 +1,20 @@
+.container {
+  background-color: white;
+  width: 65vw;
+  height: 75vh;
+  display: flex;
+}
+.sidepanel{
+    text-align: left;
+    background-color: tan;
+    width: 15%;
+    height: 100%;
+}
+.mainpanel{
+    background-color: lightcyan;
+    width: 85%;
+    height: 100%;
+}
+body{
+    font-family: 'Arial';
+}

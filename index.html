@@ -46,6 +46,11 @@
     <script src="javascript/musicrandomizerroot.js"></script>
     <script src="javascript/seasoncheckerroot.js"></script>
     <script>
+      const masterplanevent = Math.random()
+      const banner = document.getElementById('banner')
+      if (masterplanevent <= 0.5){
+        banner.src = "images/masterplan.png"
+      }
       const counter = document.getElementById('pnts')
       counter.textContent = "You Have Amassed " + localStorage.getItem("Points") + " Player Points!"
     </script>
