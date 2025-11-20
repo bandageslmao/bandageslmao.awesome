@@ -27,7 +27,7 @@
     <div class="container">
       <h2 id="counter"></h2>
       <button id="meowlbutton" class="meowl">
-        <img draggable="false" src="../images/meowl.webp" />
+        <img id="jpeg" draggable="false"/>
       </button>
       <iframe width="20" height="20"
         src="https://www.youtube.com/embed/PhJY4rSX9og?autoplay=1&loop=1&playlist=PhJY4rSX9og" frameborder="0"
@@ -49,6 +49,13 @@
         gainpoints(10)
       }
     });
+    setInterval(() => {
+          if (pnts < 5000){
+      document.getElementById('jpeg').src = "../images/meowl.webp"
+    }else{
+      document.getElementById('jpeg').src = "../images/fmeowl.png"
+    }
+    }, 1000);
   </script>
   <script src="../data.js"></script>
 </body>
