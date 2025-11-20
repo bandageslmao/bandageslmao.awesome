@@ -13,9 +13,9 @@
         var naw = new Audio
         naw.src = "../sfx/iknowwhatyouare.wav"
         naw.play()
-        naw.addEventListener('ended', function(){
+        setTimeout(() => {
             window.location.href = "../index.html"
-        })
+        }, 1000);
     </script>
 </body>
 </html>
