@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .centerer{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        input{
+            border: 0;
+            background-color: black;
+            color: white;
+            font-family: 'Comic Sans MS';
+        }
+        input:focus{
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div id="centerer" class="centerer">
+            <video id="palintro" width="320" height="240" autoplay src="../secretassets/palintro.mp4"></video>
+        </div>
+    </center>
+    <script>
+        const centerere = document.getElementById('centerer')
+        const introplayer = document.getElementById('palintro')
+        const inputbox = document.createElement('input')
+        inputbox.type = "text"
+        inputbox.placeholder = "Say Something"
+        const palimg = document.createElement('video')
+        palimg.width = "320"
+        palimg.height = "240"
+        palimg.src = "../secretassets/palidle.mp4"
+        const pickup = document.createElement('video')
+        pickup.width = "320"
+        pickup.height = "240"
+        pickup.src = "../secretassets/pickup.mp4"
+        introplayer.addEventListener("ended", function(event){
+            introplayer.remove()
+            centerere.appendChild(palimg)
+            centerere.appendChild(inputbox)
+        })
+        inputbox.addEventListener("keydown", function(event){
+            if (event.key === "Enter"){
+                palimg.remove()
+                centerere.appendChild(pickup)
+                pickup.play()
+                inputbox.remove()
+            }
+        })
+        pickup.addEventListener("ended", function(event){
+            var input = inputbox.value
+            if (input === "worms"){
+                pickup.remove()
+                const worms = document.createElement('video')
+                worms.width = "320"
+                worms.height = "240"
+                worms.src = "../secretassets/worms.mp4"
+                centerere.appendChild(worms)
+                worms.play()
+            }
+            if (input === "chezzkids"){
+                window.location.href = "https://chezzkidsarchive.neocities.org/"
+            }
+            if (input === "miltonmathgames"){
+                window.location.href = "https://miltonmathgames.neocities.org/"
+            }
+        })
+    </script>
+</body>
+</html>

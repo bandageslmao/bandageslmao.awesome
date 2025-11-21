@@ -32,13 +32,15 @@
 }
 
 .gif{
+  bottom: 0;
+  right: 0;
+  position: absolute;
   width: 350px;
   height: 305px;
-  margin-left: auto;
-
 }
 
 .rightside {
+  position: relative;
   display: flex;
   flex-direction: column;
   font-family: "Comic Sans MS";

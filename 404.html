@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="css/misc.css">
+    <link rel="stylesheet" href="css/404.css">
+    <script src="javascript/clicksoundsroot.js"></script>
+</head>
+
+<body>
+    <center>
+        <div class="header">
+            <img id="banner" src="images/banner.png" />
+            <div>
+                <a href="../index.html">Home |</a>
+                <a href="../pages/games.html"> Games |</a>
+                <a href="../pages/video.html"> AwesomeTube |</a>
+                <a href="../pages/meowl.html"> My Meowl |</a>
+                <a href="../pages/users.html"> Important People |</a>
+                <a href="../pages/catalog.html"> Catalog |</a>
+            </div>
+        </div>
+        <div class="container">
+            <a id="special" href="pages/pal.html"><img src="images/404.png"></a>
+            <img id="normal" src="images/404.png">
+            <h1>Oops!</h1>
+        </div>
+    </center>
+    <script>
+        const bass = new Audio
+        bass.src = "2008clientassets/sounds/bass.wav"
+        bass.play()
+        const specialver = document.getElementById('special')
+        const normalver = document.getElementById('normal')        
+        var chance = Math.random()
+        if (chance <= 0.01){
+            normalver.hidden = true
+            specialver.hidden = false
+        }else {
+            normalver.hidden = false
+            specialver.hidden = true
+        }
+    </script>
+</body>
+
+</html>
