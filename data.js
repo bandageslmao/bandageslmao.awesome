@@ -2,7 +2,7 @@ if (!localStorage.getItem("Points")){
     localStorage.setItem("Points","0")
 }
 if (localStorage.getItem("Visited") !== "true"){
-    window.location.href = "../pages/firsttime.html"
+    window.location.href = "pages/firsttime.html"
 }
 var Points = localStorage.getItem("Points") || 0
 
