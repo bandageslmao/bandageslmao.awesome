@@ -33,6 +33,27 @@
     <script>
         const centerere = document.getElementById('centerer')
         const introplayer = document.getElementById('palintro')
+        if (introplayer.currentTime >= 0 && introplayer.ReadyState > 2){
+            console.log('worked')
+        }else{
+            const button = document.createElement('button')
+            button.textContent = "Let Me Do This"
+            button.style.backgroundColor = "Black"
+            button.style.color = "White"
+            button.style.fontFamily = 'Comic Sans MS'
+            button.style.outline = "none"
+            button.style.border = "none"
+            button.style.zIndex = "2"
+            button.style.position = "fixed"
+            button.style.top = "0"
+            button.style.height = "100%"
+            button.style.width = "100%"
+            document.body.appendChild(button)
+            button.onclick = function(){
+                button.remove()
+                introplayer.play()
+            }
+        }
         const inputbox = document.createElement('input')
         inputbox.type = "text"
         inputbox.placeholder = "Say Something"
