@@ -18,6 +18,7 @@ function autoplayenabler() {
   document.body.appendChild(button);
   button.onclick = function () {
     song.play();
+    button.remove()
   };
 }
 song.play().catch((Error) => {

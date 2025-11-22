@@ -81,6 +81,7 @@
         pickup.addEventListener("ended", function(event){
             var input = inputbox.value
             if (input === "worms"){
+                awardbadge("WORMS")
                 pickup.remove()
                 const worms = document.createElement('video')
                 worms.width = "320"
@@ -97,5 +98,6 @@
             }
         })
     </script>
+    <script src="../data.js"></script>
 </body>
 </html>
